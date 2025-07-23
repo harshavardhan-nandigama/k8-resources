@@ -5,7 +5,7 @@ metadata:
   labels:
     purpose: config
     env: dev
-date: 
+data: 
   COURSE: "DEVOPS with AWS"
   DURATION: "2hr"
   TRAINER: "HARSHA"
