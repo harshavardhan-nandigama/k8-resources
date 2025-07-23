@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: env-demo
+  name: envar-demo
   labels:
-    purpose: demonstrate-demonstrate-environments
+    purpose: demonstrate-demonstrate-environments variables
 spec:
   containers:
   - name: nginx
