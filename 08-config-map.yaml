@@ -1,7 +1,7 @@
-apiVesrion: v1
+apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: pod-ConfigMap
+  name: pod-config
   labels:
     purpose: config
     env: dev
@@ -9,4 +9,3 @@ date:
   COURSE: "DEVOPS with AWS"
   DURATION: "2hr"
   TRAINER: "HARSHA"
-  
