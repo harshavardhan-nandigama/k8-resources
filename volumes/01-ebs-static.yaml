@@ -1,3 +1,5 @@
+#create pv
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -13,6 +15,8 @@ spec:
     volumeHandle: vol-044ef7bdb7e2bc6c0
 
 ---
+#create pvc
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -25,7 +29,11 @@ spec:
   resources:
     requests:
       storage: 15Gi
+
 ---
+
+#attach pods- node selectors
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -48,6 +56,8 @@ spec:
       claimName: ebs-static
 
 ---
+#to access fro the external world(LoadBalancer)
+
 apiVersion: v1
 kind: Service
 metadata:
