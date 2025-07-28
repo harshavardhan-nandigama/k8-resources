@@ -6,7 +6,7 @@ metadata:
   labels:
     purpose: deployment-demo
     project: roboshop
-    app: nginx
+    app: nginx 
 spec:
   replicas: 2
   # These are the labels replica set use to create pod replicas, this should match pod labels
