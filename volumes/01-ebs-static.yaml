@@ -48,7 +48,6 @@ spec:
       claimName: ebs-static
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -57,11 +56,11 @@ metadata:
     purpose: ebs-static-demo
     project: roboshop
 spec:
-  type: Loadbalancer
+  type: LoadBalancer
   selector:
     purpose: ebs-static-demo
     project: roboshop
   ports:
-  - protocol: TCP
-    port: 80 #service port
-    targetPort: 80 # container port
+    - protocol: TCP
+      port: 80 # service port
+      targetPort: 80 # container port
