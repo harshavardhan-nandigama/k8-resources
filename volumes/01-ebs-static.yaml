@@ -21,7 +21,7 @@ spec:
   storageClassName: "" #Empty string must be explicity set otherwise default storageclass will be set
   volumeName: ebs-static
   accessModes:
-    -Readwriteonce
+    - ReadWriteonce
   resources:
     requests:
       storage: 15Gi
