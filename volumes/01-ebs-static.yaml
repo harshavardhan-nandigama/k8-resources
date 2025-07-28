@@ -14,14 +14,14 @@ spec:
 
 ---
 apiVersion: v1
-kind: PersistantVolumeClaim
+kind: PersistentVolumeClaim
 metadata:
   name: ebs-static
 spec:
-  storageClassName: "" #Empty string must be explicity set otherwise default storageclass will be set
+  storageClassName: "" # Empty string must be explicitly set otherwise default StorageClass will be set
   volumeName: ebs-static
   accessModes:
-    - ReadWriteonce
+    - ReadWriteOnce
   resources:
     requests:
       storage: 15Gi
